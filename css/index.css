@@ -1,1 +1,337 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v16/7Auwp_0qiz-afTLGKA.ttf) format('truetype');
+}
+header,
+section,
+footer {
+  margin: 2%;
+}
+p {
+  color: #808080;
+}
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 10%;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 1%;
+  background: lightgray;
+}
+header nav a {
+  color: #66CDAA;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: 'Crimson Text', serif;
+}
+header nav a:hover {
+  color: white;
+}
+@media (max-width: 500px) {
+  header nav {
+    justify-content: space-evenly;
+    padding: 2% 4%;
+  }
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  header div {
+    text-align: center;
+  }
+}
+header div h1 {
+  font-family: 'Muli', sans-serif;
+  color: #66CDAA;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+header div h3 {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.2rem;
+  color: #808080;
+  letter-spacing: 5px;
+  margin-top: 1%;
+}
+#about {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-top: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  text-align: center;
+}
+#about h2 {
+  color: #66CDAA;
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1rem;
+}
+#about p {
+  line-height: 1.5;
+  font-family: 'Crimson Text', serif;
+}
+.maincontent {
+  display: flex;
+  color: #808080;
+  border-bottom: 2px solid #808080;
+  padding-bottom: 4%;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .maincontent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.maincontent .leftside {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-right: 4%;
+  font-family: 'Crimson Text', serif;
+}
+@media (max-width: 500px) {
+  .maincontent .leftside {
+    width: 100%;
+    padding-left: 4%;
+  }
+}
+.maincontent .leftside .education {
+  text-align: left;
+  padding-bottom: 10%;
+  border-bottom: 2px solid #808080;
+}
+@media (max-width: 500px) {
+  .maincontent .leftside .education {
+    width: 100%;
+  }
+}
+.maincontent .leftside .education h2 {
+  color: #66CDAA;
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 5px;
+}
+.maincontent .leftside .skills {
+  text-align: left;
+  padding-top: 10%;
+}
+.maincontent .leftside .skills h2 {
+  color: #66CDAA;
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 5px;
+}
+.maincontent #rightside {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-left: 2px solid #808080;
+  padding-left: 4%;
+  font-family: 'Crimson Text', serif;
+}
+@media (max-width: 500px) {
+  .maincontent #rightside {
+    width: 100%;
+    border-top: 2px solid #808080;
+    border-left: none;
+    padding-right: 4%;
+    padding-top: 10%;
+  }
+}
+.maincontent #rightside div {
+  margin-bottom: 6%;
+}
+.maincontent #rightside h2 {
+  color: #66CDAA;
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 5px;
+}
+.maincontent #rightside h3 {
+  font-weight: bold;
+}
+.maincontent #rightside .italics {
+  font-style: italic;
+}
+#contact {
+  background: #66CDAA;
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 1%;
+  font-family: 'Crimson Text', serif;
+}
+#contact div {
+  width: 50%;
+  text-align: center;
+}
+#contact div p {
+  color: white;
+}
+#contact div a {
+  color: white;
+  text-decoration: none;
+}
+#contact div a:hover {
+  color: #808080;
+}
